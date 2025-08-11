@@ -1,0 +1,28 @@
+{% load static %}
+
+<div class="container text-sm-center">
+  <a href="/" class="brand"><img src="{% static 'img/logo.png' %}" alt="Pictograph Logo" width="150px" height="44px" /></a>
+
+  <!-- Toggler for smaller screens -->
+  <button class="navbar-toggler me-1" style="border-color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse mt-2 mt-lg-0 mx-lg-auto" id="navbarNav">
+    <ul class="navbar-nav mx-lg-auto">
+      <li class="nav-item">
+        <a class="nav-link active" href="#home">Akademiya</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about" style="text-wrap: nowrap;">Tədris sahələri</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services" style="text-wrap: nowrap;">Təqaüd proqramları</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Əlaqə</a>
+      </li>
+    </ul>
+
+    <a href="#" class="btn muracietEtBtn ms-4 mx-lg-0 mt-3 text-center mt-lg-0">Müraciət et <i class="bi bi-arrow-up-right"></i></a>
+  </div>
+</div>

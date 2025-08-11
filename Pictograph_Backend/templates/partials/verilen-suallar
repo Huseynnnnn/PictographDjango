@@ -1,0 +1,90 @@
+{% load static %}
+<section class="tez-tez-verilen-suallar">
+        <div class="faq-container">
+            <h1 class="faq-title">Tez-Tez Verilən Suallar</h1>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <p>How to launch a Webflow website?</p>
+                    <div class="faq-icon"></div>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>How to launch a Webflow website?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <p>How to launch a Webflow website?</p>
+                    <div class="faq-icon"></div>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>How to launch a Webflow website?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <p>How to launch a Webflow website?</p>
+                    <div class="faq-icon"></div>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>How to launch a Webflow website?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <p>How to launch a Webflow website?</p>
+                    <div class="faq-icon"></div>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>How to launch a Webflow website?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <p>How to launch a Webflow website?</p>
+                    <div class="faq-icon"></div>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>How to launch a Webflow website?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <p>How to launch a Webflow website?</p>
+                    <div class="faq-icon"></div>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>How to launch a Webflow website?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <p>How to launch a Webflow website?</p>
+                    <div class="faq-icon"></div>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <p>How to launch a Webflow website?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

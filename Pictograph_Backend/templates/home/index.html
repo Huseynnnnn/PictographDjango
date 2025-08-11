@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="bashliq" style="margin-top: 60px;">
+    <div class="container">
+        <img src="{% static 'img/srect1.png' %}" class="srect1" />
+        <img src="{% static 'img/srect3.png' %}" class="srect3" />
+        <img src="{% static 'img/srect5.png' %}" class="srect5" />
+        <img src="{% static 'img/srect1.png' %}" class="srect2" />
+        <img src="{% static 'img/srect4.png' %}" class="srect4" />
+        <img src="{% static 'img/Ellipse6.png' %}" class="Ellipse6">
+        <img src="{% static 'img/Ellipse8.png' %}" class="Ellipse7">
+        <img src="{% static 'img/Ellipse7.png' %}" class="Ellipse8">
+        <img src="{% static 'img/Ellipse9.png' %}" class="Ellipse9">
+        <div class="container">
+            <header style="z-index: 999;">
+                <div class="text-center">
+                    <h1 class="main-exp">Düşü<span style="line-height: normal;">n</span>düyünü yarat!</h1>
+                    <a href="#" class="keshfEt">Kəşf et <i class="bi bi-arrow-up-right"></i></a>
+                </div>
+
+                <div class="wrapper">
+                    <div class="box-wrapper" style="left: 495.91px; top: -498.26px;">
+                        <div class="box"></div>
+                        <div class="dot dot-topleft"></div>
+                        <div class="dot dot-topright"></div>
+                        <div class="dot dot-bottomleft"></div>
+                        <div class="dot dot-bottomright"></div>
+                    </div>
+
+                    <div class="box-wrapper" style="left: 576.91px; top: -290.26px;">
+                        <div class="box"></div>
+                        <div class="dot dot-topleft"></div>
+                        <div class="dot dot-topright"></div>
+                        <div class="dot dot-bottomleft"></div>
+                        <div class="dot dot-bottomright"></div>
+                    </div>
+                </div>
+
+                <div class="wrapper-left-img">
+                    <img src="{% static 'img/Cursor-left.png' %}" alt="">
+                </div>
+
+                <div class="wrapper-right-img">
+                    <img src="{% static 'img/Cursor-right.png' %}" alt="">
+                </div>
+
+                <div class="visual-comment-left">Dizaynın sehrli dünyasına</div>
+                <div class="visual-comment-right">Bizimlə səyahət et</div>
+            </header>
+        </div>
+    </div>
+</section>
+
+{% include 'partials/tedris_saheleri.html' %}
+{% include 'partials/ferqlendiren_secimler.html' %}
+{% include 'partials/instructorlar.html' %}
+{% include 'partials/verilen-suallar'%}
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+            },
+        },
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+
+                if (isActive) {
+                    item.classList.remove('active');
+                } else {
+                    item.classList.add('active');
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}
