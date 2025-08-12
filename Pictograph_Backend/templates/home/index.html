@@ -1,58 +1,96 @@
-{% extends 'base.html' %}
+{% comment %} {% extends 'base.html' %} {% endcomment %}
 {% load static %}
+<!DOCTYPE html>
+<html lang="az">
+    <head>
+        
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Language" content="az" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="copyright" content="Copyright &copy; {% now 'Y' %} Pictograph" />
+        <meta name="keywords" content="dizayn, dizayn kursları, dizayn kurslari, design, design courses,
+        kurslar, kurslar, Pictograph, Pictograph Academy, Pictograph Akademy, Pictograph Academy kursları,
+        Pictograph Akademy kurslari, Pictograph Academy courses, Pictograph Akademy courses, Dizayn, dizaynerlik kursu, " />
+        <meta name="author" content="Pictograph Academy" />
+        <meta name="designer" content="Pictograph Academy" />
 
-{% block content %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-<section class="bashliq" style="margin-top: 60px;">
-    <div class="container">
-        <img src="{% static 'img/srect1.png' %}" class="srect1" />
-        <img src="{% static 'img/srect3.png' %}" class="srect3" />
-        <img src="{% static 'img/srect5.png' %}" class="srect5" />
-        <img src="{% static 'img/srect1.png' %}" class="srect2" />
-        <img src="{% static 'img/srect4.png' %}" class="srect4" />
-        <img src="{% static 'img/Ellipse6.png' %}" class="Ellipse6">
-        <img src="{% static 'img/Ellipse8.png' %}" class="Ellipse7">
-        <img src="{% static 'img/Ellipse7.png' %}" class="Ellipse8">
-        <img src="{% static 'img/Ellipse9.png' %}" class="Ellipse9">
-        <div class="container">
-            <header style="z-index: 999;">
-                <div class="text-center">
-                    <h1 class="main-exp">Düşü<span style="line-height: normal;">n</span>düyünü yarat!</h1>
-                    <a href="#" class="keshfEt">Kəşf et <i class="bi bi-arrow-up-right"></i></a>
+        <link rel="stylesheet" href="{% static 'bootstrap-5.3.3-dist/css/bootstrap.min.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+        <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/pictographfv.jpg' %}" />
+        <link rel="icon" type="image/png" href="{% static 'img/pictographfv.jpg' %}" />
+
+        <title>
+        {% block title %}
+            Pictograph Academy
+        {% endblock %}
+        </title>
+
+        {% block extra_css %}
+        {% endblock %}
+    </head>
+
+    {% block content %}
+    <body style="background-color: #042F3C; color: #fff; width: 100%;">
+        <section class="bashliq" style="margin-top: 60px;">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg position-fixed top-0 mt-5 p-4 pt-lg-2 pb-lg-2 ps-lg-1 pe-lg-0" style="z-index: 999;">
+                    {% include '../partials/navbar.html' %}
+                </nav>
+            </div>   
+            <div class="container">
+                <img src="{% static 'img/srect1.png' %}" class="srect1" />
+                <img src="{% static 'img/srect3.png' %}" class="srect3" />
+                <img src="{% static 'img/srect5.png' %}" class="srect5" />
+                <img src="{% static 'img/srect1.png' %}" class="srect2" />
+                <img src="{% static 'img/srect4.png' %}" class="srect4" />
+                <img src="{% static 'img/Ellipse6.png' %}" class="Ellipse6">
+                <img src="{% static 'img/Ellipse8.png' %}" class="Ellipse7">
+                <img src="{% static 'img/Ellipse7.png' %}" class="Ellipse8">
+                <img src="{% static 'img/Ellipse9.png' %}" class="Ellipse9">
+                <div class="container">
+                    <header style="z-index: 999;">
+                        <div class="text-center">
+                            <h1 class="main-exp">Düşü<span style="line-height: normal;">n</span>düyünü yarat!</h1>
+                            <a href="#" class="keshfEt">Kəşf et <i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+
+                        <div class="wrapper">
+                            <div class="box-wrapper n">
+                                <div class="box"></div>
+                                <div class="dot dot-topleft"></div>
+                                <div class="dot dot-topright"></div>
+                                <div class="dot dot-bottomleft"></div>
+                                <div class="dot dot-bottomright"></div>
+                            </div>
+
+                            <div class="box-wrapper" style="left: 566px; top: -292.26px;">
+                                <div class="box"></div>
+                                <div class="dot dot-topleft"></div>
+                                <div class="dot dot-topright"></div>
+                                <div class="dot dot-bottomleft"></div>
+                                <div class="dot dot-bottomright"></div>
+                            </div>
+                        </div>
+
+                        <div class="wrapper-left-img">
+                            <img src="{% static 'img/Cursor-left.png' %}" alt="">
+                        </div>
+
+                        <div class="wrapper-right-img">
+                            <img src="{% static 'img/Cursor-right.png' %}" alt="">
+                        </div>
+
+                        <div class="visual-comment-left">Dizaynın sehrli dünyasına</div>
+                        <div class="visual-comment-right">Bizimlə səyahət et</div>
+                    </header>
                 </div>
-
-                <div class="wrapper">
-                    <div class="box-wrapper" style="left: 495.91px; top: -498.26px;">
-                        <div class="box"></div>
-                        <div class="dot dot-topleft"></div>
-                        <div class="dot dot-topright"></div>
-                        <div class="dot dot-bottomleft"></div>
-                        <div class="dot dot-bottomright"></div>
-                    </div>
-
-                    <div class="box-wrapper" style="left: 576.91px; top: -290.26px;">
-                        <div class="box"></div>
-                        <div class="dot dot-topleft"></div>
-                        <div class="dot dot-topright"></div>
-                        <div class="dot dot-bottomleft"></div>
-                        <div class="dot dot-bottomright"></div>
-                    </div>
-                </div>
-
-                <div class="wrapper-left-img">
-                    <img src="{% static 'img/Cursor-left.png' %}" alt="">
-                </div>
-
-                <div class="wrapper-right-img">
-                    <img src="{% static 'img/Cursor-right.png' %}" alt="">
-                </div>
-
-                <div class="visual-comment-left">Dizaynın sehrli dünyasına</div>
-                <div class="visual-comment-right">Bizimlə səyahət et</div>
-            </header>
-        </div>
-    </div>
-</section>
+            </div>
+        </section>
 
 {% include 'partials/tedris_saheleri.html' %}
 {% include 'partials/ferqlendiren_secimler.html' %}
@@ -111,3 +149,5 @@
     });
 </script>
 {% endblock %}
+    </body>
+</html>

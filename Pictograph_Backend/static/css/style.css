@@ -27,8 +27,6 @@
     width: 100%;
 }
 
-
-
 /* Ellipces */
 .ellipce1 {
     z-index: -1;
@@ -381,6 +379,11 @@ header .keshfEt {
     z-index: -1;
 }
 
+.n{
+    left: 485.91px; 
+    top: -503.26px;
+}
+
 .box-wrapper .box {
     width: 100.05px;
     height: 122.25px;
@@ -421,6 +424,45 @@ header .keshfEt {
     bottom: -10px;
     right: -8px;
     z-index: -1;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .n{
+        left: 395px; 
+        top: -505.26px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+    .box-wrapper {
+        position: absolute;
+        width: 80.05px;
+        height: 100.25px;
+        z-index: -1;
+    }
+
+    .box-wrapper .box {
+        width: 80.05px;
+        height: 100.25px;
+        box-sizing: border-box;
+        border: 3.89px solid rgb(255, 184, 82);
+        border-radius: 12.95px;
+        z-index: -1;
+    }
+
+    .box-wrapper .dot {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: rgb(255, 184, 82);
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    .n{
+        left: 338.5px; 
+        top: -437.26px;
+    }
 }
 
 .wrapper-left-img {
@@ -1286,8 +1328,16 @@ header .keshfEt {
 
 
 
+
 /* Start Responsive Dizayn */
-@media only screen and (min-width: 990px) and (max-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .n{
+        left: 395px; 
+        top: -505.26px;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
     .muracietEtBtn {
         padding-top: 12px;
         padding-left: 25px;
@@ -1311,22 +1361,44 @@ header .keshfEt {
         font-size: 100px;
         line-height: 170px;
     }
-}
 
-@media only screen and (min-width: 990px) {
+    .box-wrapper {
+        position: absolute;
+        width: 80.05px;
+        height: 100.25px;
+        z-index: -1;
+    }
 
-    .main-exp,
-    .main-exp span {
-        margin-top: 16rem;
+    .box-wrapper .box {
+        width: 80.05px;
+        height: 100.25px;
+        box-sizing: border-box;
+        border: 3.89px solid rgb(255, 184, 82);
+        border-radius: 12.95px;
+        z-index: -1;
+    }
+
+    .box-wrapper .dot {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: rgb(255, 184, 82);
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    .n{
+        left: 338.5px; 
+        top: -437.26px;
     }
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1000px) {
 
     .main-exp,
     .main-exp span {
         margin-top: 14rem;
-        font-size: 60px;
+        font-size: 80px;
         line-height: 100px;
     }
 }
