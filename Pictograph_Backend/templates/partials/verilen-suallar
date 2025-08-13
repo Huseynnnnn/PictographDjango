@@ -1,9 +1,9 @@
 {% load static %}
-<section class="tez-tez-verilen-suallar">
+<section class="tez-tez-verilen-suallar mt-5">
         <div class="faq-container">
             <h1 class="faq-title">Tez-Tez Verilən Suallar</h1>
 
-            <div class="faq-item">
+            <div class="faq-item mt-4" style="margin-bottom: 20px;">
                 <button class="faq-question">
                     <p>How to launch a Webflow website?</p>
                     <div class="faq-icon"></div>

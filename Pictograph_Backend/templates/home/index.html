@@ -36,6 +36,7 @@
 
     {% block content %}
     <body style="background-color: #042F3C; color: #fff; width: 100%;">
+        <img src="{% static 'img/Ellipse6.png' %}" class="Ellipse6">
         <section class="bashliq" style="margin-top: 60px;">
             <div class="container">
                 <nav class="navbar navbar-expand-lg position-fixed top-0 mt-5 p-4 pt-lg-2 pb-lg-2 ps-lg-1 pe-lg-0" style="z-index: 999;">
@@ -48,7 +49,6 @@
                 <img src="{% static 'img/srect5.png' %}" class="srect5" />
                 <img src="{% static 'img/srect1.png' %}" class="srect2" />
                 <img src="{% static 'img/srect4.png' %}" class="srect4" />
-                <img src="{% static 'img/Ellipse6.png' %}" class="Ellipse6">
                 <img src="{% static 'img/Ellipse8.png' %}" class="Ellipse7">
                 <img src="{% static 'img/Ellipse7.png' %}" class="Ellipse8">
                 <img src="{% static 'img/Ellipse9.png' %}" class="Ellipse9">
@@ -68,7 +68,7 @@
                                 <div class="dot dot-bottomright"></div>
                             </div>
 
-                            <div class="box-wrapper" style="left: 566px; top: -292.26px;">
+                            <div class="box-wrapper r">
                                 <div class="box"></div>
                                 <div class="dot dot-topleft"></div>
                                 <div class="dot dot-topright"></div>
@@ -78,11 +78,11 @@
                         </div>
 
                         <div class="wrapper-left-img">
-                            <img src="{% static 'img/Cursor-left.png' %}" alt="">
+                            <img src="{% static 'img/Cursor-left.png' %}" alt="cursor-left">
                         </div>
 
                         <div class="wrapper-right-img">
-                            <img src="{% static 'img/Cursor-right.png' %}" alt="">
+                            <img src="{% static 'img/Cursor-right.png' %}" alt="Cursor-right">
                         </div>
 
                         <div class="visual-comment-left">Dizaynın sehrli dünyasına</div>
@@ -100,6 +100,8 @@
 {% endblock %}
 
 {% block extra_js %}
+<script src="plugins/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,

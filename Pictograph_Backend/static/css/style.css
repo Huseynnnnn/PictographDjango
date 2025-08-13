@@ -357,6 +357,7 @@ header .keshfEt {
     text-transform: uppercase;
     font-size: 135px;
     line-height: 210px;
+    margin-top: 200px;
 }
 
 .main-exp span {
@@ -391,6 +392,16 @@ header .keshfEt {
     border: 3.89px solid rgb(255, 184, 82);
     border-radius: 12.95px;
     z-index: -1;
+}
+
+.r{
+    width: 93px;
+    left: 568px; 
+    top: -294px;
+}
+
+.r .box{
+    width: 93px;
 }
 
 .box-wrapper .dot {
@@ -484,7 +495,7 @@ header .keshfEt {
     }
 
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-8px);
     }
 
     100% {
@@ -526,8 +537,8 @@ header .keshfEt {
 
 .visual-comment-right {
     position: absolute;
-    top: 425;
-    left: 820px;
+    top: 422px;
+    left: 810px;
     box-sizing: border-box;
     border: 2px solid rgb(14, 143, 182);
     border-radius: 2px 24px 24px 24px;
@@ -812,44 +823,110 @@ header .keshfEt {
 
 
 
-/* Ferlendiren Secimler */
-.secimler {
+.cards-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px; /* space between cards */
+    justify-content: center; /* center align cards */
     text-align: center;
-    margin-top: 220px;
+}
+
+.card-item {
+    background: #f5f5f5; /* example background */
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1; /* allow resizing */
+    min-width: 150px; /* prevents collapsing too small */
+}
+
+.long-card {
+    flex: 2; /* takes more space */
+}
+
+.medium-card1 {
+    flex: 3;
+}
+
+.small-card1, .small-card2 {
+    flex: 1;
+}
+
+.card-item h5 {
+    margin: 5px 0;
+}
+
+.component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ddd;
+    border: 1px solid #aaa;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.component-1 {
+    flex: 0 0 150px; /* fixed width */
+    height: 300px;   /* double height */
+}
+
+.component-2 {
+    flex: 0 0 300px; /* width of 2 components */
+    height: 150px;
+}
+
+.component-3 {
+    flex: 0 0 150px;
+    height: 150px;
+}
+
+.component-4 {
+    flex: 0 0 150px;
+    height: 150px;
+}
+
+.component-5 {
+    flex: 0 0 300px;
+    height: 150px;
+}
+
+/* Bizi ferqlendiren sechimler */
+.secimler {
+    margin-top: 100px;
 }
 
 .secimler h5 {
     color: rgb(244, 244, 244);
-    font-family: Gilroy;
     font-size: 40px;
     font-weight: 700;
     line-height: 50px;
     letter-spacing: 0%;
-    text-align: left;
+    text-align: center;
 }
 
-/* Ferlendiren Secimler / Cardlar */
+.card-box {
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+}
 
 /* Card 1 */
-.long-card {
+.box1 { 
     position: relative;
     padding-top: 32px;
     overflow: hidden;
-    width: 300px;
-    height: 750px;
-    margin: 32px 20px;
     border-radius: 30px;
     box-sizing: border-box;
     border: 1px solid rgb(244, 244, 244);
     z-index: -1;
 }
 
-.long-card h5 {
+.box1 h5 {
     color: rgb(244, 244, 244);
-    font-family: Poppins;
     font-size: 40px;
     font-weight: 400;
     line-height: 60px;
@@ -887,30 +964,20 @@ header .keshfEt {
 }
 
 /* Card 2 */
-.medium-card1 {
+.box2 {
     position: relative;
     padding-top: 32px;
     overflow: hidden;
-    width: 600px;
-    height: 365px;
-    margin-top: 32px !important;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 0px 20px;
     border-radius: 30px;
     box-sizing: border-box;
     border: 1px solid rgb(244, 244, 244);
     z-index: -1;
 }
 
-.medium-card1 h5 {
+.box2 h5 {
     color: rgb(244, 244, 244);
-    font-family: Poppins;
     font-size: 40px;
     font-weight: 400;
-    line-height: 60px;
     letter-spacing: 0%;
     text-align: left;
     z-index: -1;
@@ -945,27 +1012,18 @@ header .keshfEt {
 }
 
 /* Card 3 */
-.small-card1 {
+.box3 {
     position: relative;
     padding-top: 32px;
     overflow: hidden;
-    width: 300px;
-    height: 365px;
-    margin-top: 32px !important;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 0px 20px;
     border-radius: 30px;
     box-sizing: border-box;
     border: 1px solid rgb(244, 244, 244);
     z-index: -1;
 }
 
-.small-card1 h5 {
+.box3 h5 {
     color: rgb(244, 244, 244);
-    font-family: Poppins;
     font-size: 40px;
     font-weight: 400;
     line-height: 60px;
@@ -998,33 +1056,22 @@ header .keshfEt {
     position: absolute;
     width: 294.81px;
     height: 294.81px;
-    left: -50px;
     top: 170px;
 }
 
 /* Card 4 */
-.small-card2 {
+.box4 {
     position: relative;
     padding-top: 32px;
     overflow: hidden;
-    width: 300px;
-    height: 365px;
-    margin-top: 20px !important;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 0px 20px;
     border-radius: 30px;
     box-sizing: border-box;
     border: 1px solid rgb(244, 244, 244);
     z-index: -1;
-    transform: translate(113%, -114%);
 }
 
-.small-card2 h5 {
+.box4 h5 {
     color: rgb(244, 244, 244);
-    font-family: Poppins;
     font-size: 40px;
     font-weight: 400;
     line-height: 60px;
@@ -1056,33 +1103,23 @@ header .keshfEt {
     position: absolute;
     width: 294.81px;
     height: 294.81px;
-    left: 60px;
+    left: 100px;
     top: 170px;
 }
 
 /* Card 5 */
-.medium-card2 {
+.box5 {
     position: relative;
     padding-top: 32px;
     overflow: hidden;
-    width: 600px;
-    height: 365px;
-    margin-top: 32px !important;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 0px 20px;
     border-radius: 30px;
     box-sizing: border-box;
     border: 1px solid rgb(244, 244, 244);
     z-index: -1;
-    transform: translate(57%, -117%);
 }
 
-.medium-card2 h5 {
+.box5 h5 {
     color: rgb(244, 244, 244);
-    font-family: Poppins;
     font-size: 40px;
     font-weight: 400;
     line-height: 60px;
@@ -1119,7 +1156,43 @@ header .keshfEt {
     top: 30px;
 }
 
+.icon {
+    opacity: 0.4;
+    font-size: 50px;
+    align-self: flex-end;
+}
 
+.left-col {
+  flex: 0 0 23%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.row-equal {
+  display: flex;
+  flex: 1;
+  gap: 1.5rem;
+}
+
+.row-equal .card-box {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .flex-lg-row {
+    flex-direction: column !important;
+  }
+  .left-col {
+    flex: unset;
+  }
+}
 
 /* Slider Inst */
 /* Slide property */
@@ -1168,13 +1241,24 @@ header .keshfEt {
 
 
 /* Slider */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
 .swiper-slide {
     box-sizing: border-box;
     border: 7px solid rgba(244, 244, 244, 0.5);
     border-radius: 30px;
-    width: 295px;
+    width: 263.8px;
     height: 400px;
-    background: url();
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
 }
 
 .swiper-slide img {
@@ -1182,6 +1266,7 @@ header .keshfEt {
     height: 100%;
     display: block;
     border-radius: 30px !important;
+    object-fit: cover;
 }
 
 .muellimler {
@@ -1223,7 +1308,6 @@ header .keshfEt {
 
 .faq-title {
     color: rgb(244, 244, 244);
-    font-family: Gilroy;
     font-size: 48px;
     font-weight: 700;
     line-height: 109%;
@@ -1258,7 +1342,6 @@ header .keshfEt {
     font-weight: 500;
     transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
     color: rgb(4, 47, 60);
-    font-family: Gilroy;
     font-size: 24px;
     font-weight: 500;
     line-height: 28px;
@@ -1302,7 +1385,6 @@ header .keshfEt {
     color: #666;
     line-height: 1.6;
     color: rgb(4, 47, 60);
-    font-family: Gilroy;
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
@@ -1336,6 +1418,7 @@ header .keshfEt {
         top: -505.26px;
     }
 }
+
 
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
     .muracietEtBtn {
