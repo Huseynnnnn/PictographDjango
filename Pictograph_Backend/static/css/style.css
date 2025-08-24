@@ -352,7 +352,6 @@ header .keshfEt {
 /* Dusunduyunu Yarat! */
 .main-exp,
 .main-exp span {
-    font-family: 'Gilroy-black';
     letter-spacing: 6px;
     text-transform: uppercase;
     font-size: 135px;
@@ -380,8 +379,8 @@ header .keshfEt {
     z-index: -1;
 }
 
-.n{
-    left: 485.91px; 
+.n {
+    left: 485.91px;
     top: -503.26px;
 }
 
@@ -394,13 +393,13 @@ header .keshfEt {
     z-index: -1;
 }
 
-.r{
+.r {
     width: 93px;
-    left: 568px; 
+    left: 568px;
     top: -294px;
 }
 
-.r .box{
+.r .box {
     width: 93px;
 }
 
@@ -438,8 +437,8 @@ header .keshfEt {
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-    .n{
-        left: 395px; 
+    .n {
+        left: 395px;
         top: -505.26px;
     }
 }
@@ -470,8 +469,8 @@ header .keshfEt {
         z-index: -1;
     }
 
-    .n{
-        left: 338.5px; 
+    .n {
+        left: 338.5px;
         top: -437.26px;
     }
 }
@@ -624,7 +623,6 @@ header .keshfEt {
     font-weight: 800;
     line-height: 35px;
     letter-spacing: 1.5px;
-    font-family: 'Gilroy-bold', sans-serif;
 }
 
 .custom-card .card-body .card-title,
@@ -790,7 +788,9 @@ header .keshfEt {
 }
 
 .etrafli-btn .icon {
+    opacity: 0.9;
     font-size: 20px;
+    white-space: nowrap;
     color: #042F3C;
     position: absolute;
     right: 16px;
@@ -803,11 +803,10 @@ header .keshfEt {
     font-size: 20px;
     white-space: nowrap;
     transform: translateX(-10px);
-    font-size: 20px;
     color: #042F3C;
     position: absolute;
     right: 48px;
-    transition: opacity 0.1s ease, transform 0.4s ease;
+    transition: opacity 0.1s ease, transform 0.1s ease;
 }
 
 .custom-card:hover .etrafli-btn .hover-text {
@@ -822,32 +821,40 @@ header .keshfEt {
 }
 
 
+/* Cardlar/ferqlendiren secimler*/
 
 .cards-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px; /* space between cards */
-    justify-content: center; /* center align cards */
+    gap: 15px;
+    /* space between cards */
+    justify-content: center;
+    /* center align cards */
     text-align: center;
 }
 
 .card-item {
-    background: #f5f5f5; /* example background */
+    background: #f5f5f5;
+    /* example background */
     padding: 20px;
     border-radius: 10px;
-    flex: 1; /* allow resizing */
-    min-width: 150px; /* prevents collapsing too small */
+    flex: 1;
+    /* allow resizing */
+    min-width: 150px;
+    /* prevents collapsing too small */
 }
 
 .long-card {
-    flex: 2; /* takes more space */
+    flex: 2;
+    /* takes more space */
 }
 
 .medium-card1 {
     flex: 3;
 }
 
-.small-card1, .small-card2 {
+.small-card1,
+.small-card2 {
     flex: 1;
 }
 
@@ -866,12 +873,15 @@ header .keshfEt {
 }
 
 .component-1 {
-    flex: 0 0 150px; /* fixed width */
-    height: 300px;   /* double height */
+    flex: 0 0 150px;
+    /* fixed width */
+    height: 300px;
+    /* double height */
 }
 
 .component-2 {
-    flex: 0 0 300px; /* width of 2 components */
+    flex: 0 0 300px;
+    /* width of 2 components */
     height: 150px;
 }
 
@@ -905,17 +915,17 @@ header .keshfEt {
 }
 
 .card-box {
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 15px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
 }
 
 /* Card 1 */
-.box1 { 
+.box1 {
     position: relative;
     padding-top: 32px;
     overflow: hidden;
@@ -1163,35 +1173,36 @@ header .keshfEt {
 }
 
 .left-col {
-  flex: 0 0 23%;
-  display: flex;
-  flex-direction: column;
+    flex: 0 0 23%;
+    display: flex;
+    flex-direction: column;
 }
 
 .right-col {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .row-equal {
-  display: flex;
-  flex: 1;
-  gap: 1.5rem;
+    display: flex;
+    flex: 1;
+    gap: 1.5rem;
 }
 
 .row-equal .card-box {
-  flex: 1;
+    flex: 1;
 }
 
 @media (max-width: 768px) {
-  .flex-lg-row {
-    flex-direction: column !important;
-  }
-  .left-col {
-    flex: unset;
-  }
+    .flex-lg-row {
+        flex-direction: column !important;
+    }
+
+    .left-col {
+        flex: unset;
+    }
 }
 
 /* Slider Inst */
@@ -1211,7 +1222,6 @@ header .keshfEt {
 }
 
 .İnstructor-harf h5 {
-    font-family: Gilroy;
     font-size: 48px;
     font-weight: 700;
     line-height: 109%;
@@ -1280,7 +1290,6 @@ header .keshfEt {
 
 .muellimler h5 {
     color: rgb(244, 244, 244);
-    font-family: Gilroy;
     font-size: 24px;
     font-weight: 600;
     line-height: 109%;
@@ -1290,7 +1299,6 @@ header .keshfEt {
 
 .muellimler p {
     color: rgb(244, 244, 244);
-    font-family: Gilroy;
     font-size: 18px;
     font-weight: 400;
     line-height: 109%;
@@ -1413,8 +1421,8 @@ header .keshfEt {
 
 /* Start Responsive Dizayn */
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-    .n{
-        left: 395px; 
+    .n {
+        left: 395px;
         top: -505.26px;
     }
 }
@@ -1470,8 +1478,8 @@ header .keshfEt {
         z-index: -1;
     }
 
-    .n{
-        left: 338.5px; 
+    .n {
+        left: 338.5px;
         top: -437.26px;
     }
 }

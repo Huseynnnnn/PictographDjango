@@ -364,6 +364,7 @@ header .keshfEt {
 .main-exp span {
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Gilroy-black';
     padding: 0 !important;
     margin: 0 !important;
     line-height: 0;

@@ -81,27 +81,29 @@ WSGI_APPLICATION = 'pictograph_kurs.wsgi.application'
 #     }
 # }
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql',
-#        'NAME': 'Pictograph_db',
-#        'USER': 'postgres',
-#        'PASSWORD': 'Huseyn313',
-#        'HOST': 'localhost',
-#        'PORT': '5432',
-#    }
-#}
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Pictograph_db2',
+        'NAME': 'Pictograph_db',
         'USER': 'postgres',
-        'PASSWORD': 'cOdingHm145_',
+        'PASSWORD': 'Huseyn313',
         'HOST': 'localhost',
         'PORT': '5432',
     }
 }
+
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'Pictograph_db2',
+#         'USER': 'postgres',
+#         'PASSWORD': 'cOdingHm145_',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 
 # Password validation
